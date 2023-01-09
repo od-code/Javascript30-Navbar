@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(245, 237, 228);
+}
+/* The Navigation bar  */
+.navContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 55px;
+}
+.navCenter {
+  flex-basis: 50%;
+}
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+a {
+  text-decoration: none;
+  color: rgb(66, 63, 63);
+}
+/* The hero section  */
+main {
+  display: flex;
+  align-items: center;
+  margin: 50px 30px;
+}
+main section + img {
+  width: 300px;
+}
+.description {
+  padding: 0 120px;
+  width: 70%;
+  line-height: 30px;
+}
+/* The footer  */
+
+.container {
+  text-align: center;
+  padding: 0 180px;
+}
+.logoContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+/* Other */
+.btn {
+  padding: 15px 20px;
+  border: none;
+  background-color: #251c3b;
+  color: #fff;
+  border-radius: 3px;
+}
+h1 {
+  font-size: 60px;
+  line-height: 50px;
+}
+h1::first-line {
+  color: rgb(235, 166, 37);
+}
+/* The Mobile view  */
+@media screen and (max-width: 400px) {
+  .navCenter,
+  .navEnd,
+  main section + img {
+    display: none;
+  }
+  .description {
+    width: 100%;
+    padding: 0 10px;
+    margin: 0;
+  }
+  main {
+    margin: 0;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  .navContainer {
+    padding: 0;
+    justify-content: flex-start;
+  }
+}
