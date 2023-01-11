@@ -84,11 +84,14 @@ h1::first-line {
   h1 {
     font-size: 20px;
   }
+  .container {
+    padding: 0 2em;
+  }
   .navContainer {
     padding: 0;
     justify-content: flex-start;
   }
-  .heroImg {
+  .description + img {
     width: 50%;
   }
   .logoContainer {
