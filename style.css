@@ -88,4 +88,12 @@ h1::first-line {
     padding: 0;
     justify-content: flex-start;
   }
+  .heroImg {
+    width: 50%;
+  }
+  .logoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
